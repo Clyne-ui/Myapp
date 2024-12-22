@@ -17,6 +17,6 @@ function calculate() {
     replace.innerHTML = "weeeee nakuona"
 }
 
-function calculate() {
+function inputClear() {
     replace.style.fontSize = '35px'
 }
