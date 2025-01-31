@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>clyne</title>
+</head>
+.
+
+<body>
+    <h1 id='compchoice'>Computer Choice:</h1>
+    <h1 id='userchoice'>My Choice:</h1>
+    <h2 id='result'>Results:</h2>
+    <button id='rock'>rock</button>
+    <button id='paper'>paper</button>
+    <button id='scissas'>scissas</button>
+
+    <script>
+        const computerDisplay = document.getElementById('compchoice');
+        const userDisplay = document.getElementById('userchoice');
+        const used = document.getElementById('result');
+        const choice = document.querySelector('button');
+        let userssChoice;
+
+        choice.forEach(choice => choice.addEventListener('click', (e) => {
+            userssChoice = e.target.id;
+            userDisplay.innerHTML = userssChoice;
+        }))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chage and add</title>
+
+</head>
+
+<body>
+    <h1 id="chake">i want to ccreat a button tha is functional</h1>
+    <button onclick="makechange()">cart o</button>
+    <button onclick="console.log(varieble1 ++)">cart 1</button>
+    <button onclick="console.log(varieble1 +=2)">cart 2</button>
+    <button onclick="console.log(varieble1 +=3 )">3</button>
+    <button onclick="console.log(varieble1)">Reset</button>
+
+    <script>
+        let varieble1 = 0;
+
+        function makechange() {
+            document.getElementById('chake').innerHTML = varieble1++;
+        }
+    </script>
+</body>
+
+</html>

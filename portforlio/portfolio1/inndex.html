@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>javascrip</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Times New Roman;
+        font-size: 16px;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .outer-circla {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inner-circle {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .laps {
+        height: 300px;
+        overflow: auto
+    }
+    
+    .text {
+        color: #fff;
+        font-size: 23px;
+    }
+    
+    .minute {
+        font-size: 48px;
+    }
+    
+    .seconds {
+        font-size: 42px;
+    }
+    
+    .msco {
+        font-size: 27px
+    }
+    
+    .button-wrapper {
+        width: 259px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: black;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: rgb(241, 234, 234);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="outer-circla">
+                <div class="inner-circle">
+                    <span class="text minute">01 :</span>
+                    <span class="text seconds">48 .</span>
+                    <span class="text msco">07</span>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button class="button">Reset</button>
+                <button class="button">Play</button>
+                <button class="button">Stop</button>
+            </div>
+        </div>
+        <div class="laps"></div>
+    </div>
+    <script>
+        function chageeme() {
+
+        }
+
+        function greet() {
+            return console.log('week 1')
+        }
+        greet();
+        let person = {
+            name: 'Clyne Wafuldfa',
+            age: 30
+        }
+
+        console.log(person.name);
+        const age = 15;
+
+        if (age >= 16) {
+            console.log('you can drive btu');
+        } else if (age >= 14) {
+            console.log('almost there')
+        } else {
+            console.log('you can not');
+        }
+    </script>
+</body>
+
+</html>

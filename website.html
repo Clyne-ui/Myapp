@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS & javascript</title>
+    <style>
+        .red-button {
+            background-color: red;
+            color: white;
+            border: 300;
+        }
+        
+        img {
+            height: 350px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        
+        .container {
+            width: 200px;
+            height: 350px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            animation: gallary 20s linear infinite;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="replace">am going to be moved</h1>
+
+    <button title="tooltip" class="red-button" onclick="
+    alert('NIKO HAPA SHUNGE MKUU')">hellow</button>
+    <p>paragraph of the
+        <button onclick="changthe()">clyne</button> webpage used</p>
+
+    <div class="container">
+        <span style="--i:1"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:2"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:3"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:4"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:5"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:6"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:7"><img src="ALPH0081.jpg" alt=""></span>
+        <span style="--i:8"><img src="ALPH0081.jpg" alt=""></span>
+    </div>
+
+    <script>
+        function changthe() {
+            document.getElementById('replace').innerHTML = 'Clyne:  ' + addedto + adddddded;
+        }
+        var adddddded = ' WAFULA'
+        let num1 = 2
+        let num2 = 45
+        const addedto = num1 + num2;
+    </script>
+</body>
+
+</html>

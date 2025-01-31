@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log in</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+        color: black;
+    }
+    
+    body {
+        widows: 100vw;
+        height: 100vh;
+        background: #081b29;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+     ::webkit-input-placehold {
+        color: #eee
+    }
+    
+    .wrapper {
+        position: relative;
+        width: 800px;
+        height: 95vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 0 0 50px 0 #00a6bc;
+        border: 3px solid #00ffff;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .inp {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
+    }
+    
+    .input {
+        border: none;
+        outline: none;
+        background: none;
+        width: 260px;
+        margin-top: 40px;
+        padding-right: 10px;
+        font-size: 17px;
+        color: #0ef;
+    }
+    
+    .para {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    
+    .submit {
+        border: none;
+        outline: none;
+        width: 288px;
+        margin-top: 25px;
+        padding: 10px 0;
+        font-size: 20px;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: linear-gradient(45deg, #0ef, #c800ff);
+    }
+    
+    .footer {
+        margin-top: 30px;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        color: #fff
+    }
+    
+    .link {
+        color: #0ef;
+        text-decoration: none;
+    }
+    
+    .banner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 80vh;
+        background: linear-gradient(to right, #0ef, #0ef, #c800ff);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+        padding-right: 70px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .wel-text {
+        font-size: 40px;
+        margin-top: 50px;
+        line-height: 50px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="form">
+            <h1 class="title">sign in</h1>
+            <div class="inp">
+                <input type="text" name="username" id="username" class="input" placehold="Username">
+                <i class="fa-solid fa-user"></i></div>
+
+            <div class="inp">
+                <input type="password" name="password" id="password" class="input" placeholder="Password">
+                <i class="fa-solid fa-lock"></i> </div>
+            <button class="submit" onclick="greet()">Log in</button>
+            <p class="footer">Don't you have an account?
+                <a href="#" class="link">Pleas Register</a> </p>
+
+        </form>
+        <div></div>
+        <div class="banner">
+            <h1 class="wel-text">Welcome</h1>
+            <p class="para" id="change">clyne</p>
+        </div>
+    </div>
+    <script>
+        let num8 = document.getElementById('username');
+
+        function greet() {
+            console.log(num8);
+            document.getElementById('change').innerHTML = 'MIMI ATA SIJUI';
+        }
+    </script>
+</body>
+
+</html>
